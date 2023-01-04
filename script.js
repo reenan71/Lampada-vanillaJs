@@ -10,9 +10,16 @@ function lampOff () {
     lamp.src = "assets/lampada-desligada.jpg"
 }
 
+function lampBroken(){
+    lamp. src = "assets/lampada-quebrada.jpg"
+}
+
 
 
 
 turnOn.addEventListener ( 'click' , lampOn);
 turnOff.addEventListener ( 'click' , lampOff);
+lamp.addEventListener('mouseover', lampOn);
+lamp.addEventListener('mouseleave', lampOff);
+lamp.addEventListener('dblclick', lampBroken);
 
